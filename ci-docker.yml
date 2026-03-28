@@ -38,7 +38,8 @@ steps:
 
 - task: Docker@2
   inputs:
-    containerRegistry: 'docker-hemant'
-    repository: 'sakpalhemant\sampleapi'
+    containerRegistry: 'docker'
+    repository: 'sampleapi'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
+    tags: 
